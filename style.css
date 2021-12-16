@@ -10,150 +10,6 @@
   html {
     font-size: 62.5%;
   }
-  
-  .spinner-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #262626;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s;
-    z-index: 300;
-  }
-  
-  .display .spinner-container {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .circles {
-    width: 8rem;
-    height: 8rem;
-    position: relative;
-    opacity: 0;
-    visibility: hidden;
-    animation: displayCircles 4s;
-  }
-  
-  @keyframes displayCircles {
-    0% {
-      opacity: 0;
-      visibility: hidden;
-    }
-    25% {
-      opacity: 1;
-      visibility: visible;
-    }
-    90% {
-      opacity: 1;
-      visibility: visible;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-  
-  .circles div {
-    animation: circles 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    transform-origin: 4rem 4rem;
-  }
-  
-  .circles div::after {
-    content: "";
-    position: absolute;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-    background-color: #c29525;
-    margin: -0.4rem 0 0 -0.4rem;
-  }
-  
-  .circles div:nth-child(1) {
-    animation-delay: -0.036s;
-  }
-  
-  .circles div:nth-child(1)::after {
-    top: 6.3rem;
-    left: 6.3rem;
-  }
-  
-  .circles div:nth-child(2) {
-    animation-delay: -0.072s;
-  }
-  
-  .circles div:nth-child(2)::after {
-    top: 6.8rem;
-    left: 5.6rem;
-  }
-  
-  .circles div:nth-child(3) {
-    animation-delay: -0.108s;
-  }
-  
-  .circles div:nth-child(3)::after {
-    top: 7.1rem;
-    left: 4.8rem;
-  }
-  
-  .circles div:nth-child(4) {
-    animation-delay: -0.144s;
-  }
-  
-  .circles div:nth-child(4)::after {
-    top: 7.2rem;
-    left: 4rem;
-  }
-  
-  .circles div:nth-child(5) {
-    animation-delay: -0.18s;
-  }
-  
-  .circles div:nth-child(5)::after {
-    top: 7.1rem;
-    left: 3.2rem;
-  }
-  
-  .circles div:nth-child(6) {
-    animation-delay: -0.216s;
-  }
-  
-  .circles div:nth-child(6)::after {
-    top: 6.8rem;
-    left: 2.4rem;
-  }
-  
-  .circles div:nth-child(7) {
-    animation-delay: -0.252s;
-  }
-  
-  .circles div:nth-child(7)::after {
-    top: 6.3rem;
-    left: 1.7rem;
-  }
-  
-  .circles div:nth-child(8) {
-    animation-delay: -0.288s;
-  }
-  
-  .circles div:nth-child(8)::after {
-    top: 5.6rem;
-    left: 1.2rem;
-  }
-  
-  @keyframes circles {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
   .container {
     display: none;
   }
@@ -161,7 +17,6 @@
   .display .container {
     display: block;
   }
-  
   .hamburger-menu {
     width: 3rem;
     height: 3rem;
@@ -179,29 +34,11 @@
   .change .hamburger-menu {
     right: 33rem;
   }
-  
   .line {
     width: 100%;
     height: 0.2rem;
     background-color: #fff;
     box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
-  }
-  
-  .change .line {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .change .line-1 {
-    transform: rotate(45deg) translate(0.3rem, 0.8rem);
-  }
-  
-  .change .line-2 {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .change .line-3 {
-    transform: rotate(-45deg) translate(0.3rem, -0.8rem);
   }
   
   .hamburger-menu span {
@@ -352,6 +189,7 @@
   
   .menu-item {
     text-align: center;
+    padding-top: 2rem;
   }
   
   .menu-link {
@@ -755,21 +593,6 @@
     color: #a7a7a7;
   }
   
-  .scroll-btn {
-    position: fixed;
-    right: 5rem;
-    bottom: 5rem;
-    width: 4.5rem;
-    height: 4.5rem;
-    background-color: #e2b646;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: #fff;
-    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.3rem;
-  }
   
   @media (max-width: 1500px) {
     .about-us-img-wrapper {
@@ -899,47 +722,6 @@
       width: 100%;
     }
   
-
-
-
-
-
-    .menu__btn {
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        padding: 0 1rem;
-        width: 100%;
-    }
-    
-    .button {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        text-decoration: none;
-        padding: 10px 20px;
-        height: 10%;
-        width: 10%;
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        background: #833ab4;
-        background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
-        background: linear-gradient(to right, #834d9b, #d04ed6);
-        color: #fff;
-        transition: all 0.3s ease;
-    }
-    
-    .menu__btn:hover {
-        color: #fff;
-    }
-
-
-
-
-
-
-
     .contact-left {
       width: 0;
     }
@@ -1039,14 +821,9 @@
 	vertical-align: top;
 }
 
-/* Footer left */
-
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
-/* The company logo */
-
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Open Sans', cursive;
@@ -1080,8 +857,6 @@
 	margin: 0;
 }
 
-/* Footer Center */
-
 .footer-distributed .footer-center{
 	width: 35%;
 }
@@ -1098,7 +873,6 @@
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
@@ -1118,12 +892,10 @@
 	font-size:14px;
 	line-height:2;
 }
-
 .footer-distributed .footer-center p a{
 	color:  lightseagreen;
 	text-decoration: none;;
 }
-
 .footer-distributed .footer-links a:before {
   content: "|";
   font-weight:300;
@@ -1182,9 +954,6 @@
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
 
 	.footer-distributed{
@@ -1206,28 +975,3 @@
 
 }
 
-
-/* Popup container */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  
